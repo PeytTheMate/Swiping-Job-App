@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>LINK - The Job Search App</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Job Search App</h1>
+            <h2>Swipe to find the perfect match!</h2>
+            <form id="search-form">
+                <input type="text" class="form-control" placeholder="Job Title" id="search">
+                <input type="text" class="form-control" placeholder="Location" id="location">
+                <button class="btn btn-block">Search</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="loading-element">
+                <img src="src/img/bouncing-ball.svg" alt="">  
+                <!-- add img / svg of spinner to the src folder for the loading screen -->
+            </div>
+            <div class="result-container"></div>
+        </div>
+    </main>
+    <script type="module" src="src/app.js"></script>
+    <script type="module" src="src/JobSearch.js"></script>
+    <script type="module" src="src/templates.js"></script>
+    <script type="module" src="src/utils.js"></script>
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>
